@@ -1,0 +1,170 @@
+{
+  "version": "1.0",
+  "date_creation": "2026-09-09",
+  "description": "Jeu de questions de reference pour l'evaluation de l'assistant RAG RH Novaterra Solutions",
+  "questions": [
+    {
+      "id": "Q01",
+      "categorie": "factuelle",
+      "question": "Quel est le barème de remboursement kilométrique ?",
+      "reponse_attendue": "Le barème forfaitaire est de 0,45 euro par kilomètre, quelle que soit la puissance du véhicule.",
+      "mots_cles": ["0,45"],
+      "source_attendue": "03_notes_de_frais.md"
+    },
+    {
+      "id": "Q02",
+      "categorie": "factuelle",
+      "question": "Combien de jours de congé sont accordés pour le mariage d'un salarié ?",
+      "reponse_attendue": "4 jours ouvrés sont accordés pour le mariage ou l'union civile du salarié.",
+      "mots_cles": ["4", "jours"],
+      "source_attendue": "10_conges_exceptionnels.md"
+    },
+    {
+      "id": "Q03",
+      "categorie": "factuelle",
+      "question": "Quelle est la longueur minimale exigée pour un mot de passe ?",
+      "reponse_attendue": "Un mot de passe doit comporter au minimum 14 caractères.",
+      "mots_cles": ["14", "caractères"],
+      "source_attendue": "09_confidentialite_securite.md"
+    },
+    {
+      "id": "Q04",
+      "categorie": "factuelle",
+      "question": "Quel est le délai de carence en cas d'arrêt maladie ?",
+      "reponse_attendue": "Un délai de carence de 3 jours s'applique, sauf en cas d'hospitalisation ou d'accident du travail.",
+      "mots_cles": ["3", "jours"],
+      "source_attendue": "07_arret_maladie.md"
+    },
+    {
+      "id": "Q05",
+      "categorie": "factuelle",
+      "question": "Quel est le plafond de remboursement pour un repas en déplacement ?",
+      "reponse_attendue": "Le plafond est de 19 euros par repas.",
+      "mots_cles": ["19"],
+      "source_attendue": "03_notes_de_frais.md"
+    },
+    {
+      "id": "Q06",
+      "categorie": "factuelle",
+      "question": "Combien de jours de congés payés un salarié acquiert-il par année complète ?",
+      "reponse_attendue": "25 jours ouvrés par année complète, soit 2,08 jours par mois de travail effectif.",
+      "mots_cles": ["25", "jours"],
+      "source_attendue": "01_conges_payes.md"
+    },
+    {
+      "id": "Q07",
+      "categorie": "factuelle",
+      "question": "Tous les combien de temps un ordinateur portable est-il renouvelé ?",
+      "reponse_attendue": "L'ordinateur portable est renouvelé tous les 4 ans.",
+      "mots_cles": ["4", "ans"],
+      "source_attendue": "08_materiel_informatique.md"
+    },
+    {
+      "id": "Q08",
+      "categorie": "factuelle",
+      "question": "À quelle période se déroule la campagne d'entretiens annuels ?",
+      "reponse_attendue": "La campagne se déroule chaque année entre le 1er et le 31 mars.",
+      "mots_cles": ["mars"],
+      "source_attendue": "05_entretien_annuel.md"
+    },
+    {
+      "id": "Q09",
+      "categorie": "factuelle",
+      "question": "Avant quelle date faut-il déposer une demande de formation pour l'année suivante ?",
+      "reponse_attendue": "Les demandes doivent être déposées avant le 30 septembre de l'année en cours.",
+      "mots_cles": ["30", "septembre"],
+      "source_attendue": "06_formation.md"
+    },
+    {
+      "id": "Q10",
+      "categorie": "factuelle",
+      "question": "Quel jour de la semaine la présence sur site est-elle obligatoire pour tous ?",
+      "reponse_attendue": "Le mardi est la journée de présence collective obligatoire.",
+      "mots_cles": ["mardi"],
+      "source_attendue": "02_teletravail.md"
+    },
+    {
+      "id": "Q11",
+      "categorie": "factuelle",
+      "question": "Dans quel délai un incident de sécurité doit-il être signalé ?",
+      "reponse_attendue": "Tout incident de sécurité doit être signalé dans les 24 heures.",
+      "mots_cles": ["24", "heures"],
+      "source_attendue": "09_confidentialite_securite.md"
+    },
+    {
+      "id": "Q12",
+      "categorie": "factuelle",
+      "question": "Quel est le montant de l'allocation mensuelle versée aux télétravailleurs ?",
+      "reponse_attendue": "Une allocation forfaitaire de 20 euros par mois est versée aux salariés télétravaillant au moins 2 jours par semaine.",
+      "mots_cles": ["20", "euros"],
+      "source_attendue": "02_teletravail.md"
+    },
+    {
+      "id": "Q13",
+      "categorie": "croisement",
+      "question": "Un salarié arrivé il y a deux semaines peut-il télétravailler ?",
+      "reponse_attendue": "Non. Le télétravail exige une ancienneté minimale de 6 mois et la validation de la période d'essai. De plus, le télétravail n'est pas accessible pendant le premier mois de présence.",
+      "mots_cles": ["non"],
+      "source_attendue": "02_teletravail.md",
+      "sources_secondaires": ["04_integration.md"]
+    },
+    {
+      "id": "Q14",
+      "categorie": "croisement",
+      "question": "Un cadre embauché il y a trois mois remplit-il les conditions du télétravail ?",
+      "reponse_attendue": "Non. La période d'essai d'un cadre dure 4 mois et n'est donc pas encore validée, et l'ancienneté minimale exigée est de 6 mois.",
+      "mots_cles": ["non"],
+      "source_attendue": "02_teletravail.md",
+      "sources_secondaires": ["04_integration.md"]
+    },
+    {
+      "id": "Q15",
+      "categorie": "croisement",
+      "question": "Quand un nouvel arrivant reçoit-il son matériel informatique et par qui ?",
+      "reponse_attendue": "Le matériel est remis par le service IT le premier jour, à 10h30. La dotation comprend un ordinateur portable, une souris, un casque audio et un badge.",
+      "mots_cles": ["IT"],
+      "source_attendue": "04_integration.md",
+      "sources_secondaires": ["08_materiel_informatique.md"]
+    },
+    {
+      "id": "Q16",
+      "categorie": "piege",
+      "question": "Tous les combien a lieu l'entretien professionnel ?",
+      "reponse_attendue": "L'entretien professionnel a lieu tous les 2 ans, avec un bilan récapitulatif tous les 6 ans. Il ne doit pas être confondu avec l'entretien annuel d'évaluation, qui est annuel.",
+      "mots_cles": ["2", "ans"],
+      "source_attendue": "05_entretien_annuel.md"
+    },
+    {
+      "id": "Q17",
+      "categorie": "piege",
+      "question": "Combien de jours de congé sont accordés en cas de décès d'un parent ?",
+      "reponse_attendue": "3 jours ouvrés sont accordés pour le décès d'un parent. À ne pas confondre avec le décès du conjoint ou d'un enfant, qui ouvre droit à 5 jours ouvrés.",
+      "mots_cles": ["3", "jours"],
+      "source_attendue": "10_conges_exceptionnels.md"
+    },
+    {
+      "id": "Q18",
+      "categorie": "piege",
+      "question": "Quel est le délai de dépôt pour une demande de congé de deux jours ?",
+      "reponse_attendue": "5 jours ouvrés avant le départ. Le délai de 15 jours ouvrés ne s'applique qu'aux absences de 3 jours ouvrés et plus.",
+      "mots_cles": ["5", "jours"],
+      "source_attendue": "01_conges_payes.md"
+    },
+    {
+      "id": "Q19",
+      "categorie": "sans_reponse",
+      "question": "Comment demander un congé sabbatique ?",
+      "reponse_attendue": "L'information ne figure pas dans la documentation RH. Le système doit refuser de répondre.",
+      "mots_cles": ["ne dispose pas"],
+      "source_attendue": null
+    },
+    {
+      "id": "Q20",
+      "categorie": "sans_reponse",
+      "question": "Comment alimenter mon compte épargne-temps ?",
+      "reponse_attendue": "L'information ne figure pas dans la documentation RH. Le système doit refuser de répondre.",
+      "mots_cles": ["ne dispose pas"],
+      "source_attendue": null
+    }
+  ]
+}

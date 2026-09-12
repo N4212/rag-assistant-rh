@@ -1,0 +1,17 @@
+.env
+data/chroma/
+.venv/
+__pycache__/
+mlflow.db
+mlruns/
+
+# Prefect
+.prefect/
+prefect.db
+
+# Python
+*.pyc
+.pytest_cache/
+
+# Système
+.DS_Store
