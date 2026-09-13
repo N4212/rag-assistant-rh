@@ -13,7 +13,9 @@ def obtenir_modele(nom_modele: str = MODELE_EMBEDDING) -> SentenceTransformer:
     """Charge le modèle une seule fois et le réutilise ensuite."""
     global _modele
     if _modele is None:
-        _modele = SentenceTransformer(nom_modele)
+        # La carte graphique disponible (architecture Maxwell) n'est pas
+        # prise en charge par cette version de PyTorch : calcul sur CPU.
+        _modele = SentenceTransformer(nom_modele, device="cpu")
     return _modele
 
 

@@ -91,8 +91,8 @@ MODELE_EMBEDDING = "paraphrase-multilingual-MiniLM-L12-v2"
 def calculer_embeddings(chunks: list[dict], nom_modele: str = MODELE_EMBEDDING):
     """Transforme le texte de chaque chunk en vecteur."""
     # Le chargement du modèle est lent : on ne le fait qu'une fois
-    modele = SentenceTransformer(nom_modele)
-
+    modele = SentenceTransformer(nom_modele, device="cpu")
+    
     textes = [c["texte"] for c in chunks]
 
     # encode() traite toute la liste d'un coup : bien plus rapide
