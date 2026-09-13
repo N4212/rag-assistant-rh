@@ -73,8 +73,8 @@ if __name__ == "__main__":
         # 3. Piège : deux dispositifs proches à ne pas confondre
         "Tous les combien a lieu l'entretien professionnel ?",
 
-        # 4. Croisement de deux documents
-        "Un salarié arrivé il y a deux semaines peut-il télétravailler ?",
+        # 4. Échec de recherche : l'information existe mais n'est pas remontée
+        "Quand un nouvel arrivant reçoit-il son matériel informatique et par qui ?",
     ]
 
     for question in questions:
@@ -83,3 +83,10 @@ if __name__ == "__main__":
         print(f"Q : {resultat['question']}\n")
         print(f"R : {resultat['reponse']}\n")
         print(f"Sources : {resultat['sources']}\n")
+
+    # Même question, avec top_k=5
+    print("#" * 70)
+    print("MEME QUESTION AVEC top_k=5\n")
+    resultat = repondre(questions[-1], COLLECTION, top_k=5)
+    print(f"R : {resultat['reponse']}\n")
+    print(f"Sources : {resultat['sources']}")
