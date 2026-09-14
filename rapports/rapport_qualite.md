@@ -1,6 +1,6 @@
 # Rapport de suivi de la qualité — assistant RAG RH
 
-*Généré le 14/09/2026 à 04:26*
+*Généré le 14/09/2026 à 05:03*
 
 Seuil d'alerte : **90%** du taux de réponses correctes.
 
@@ -35,11 +35,12 @@ Exécutions successives de la configuration retenue.
 | 14/09/2026 03:54 | 100.0% | 100.0% | 0 |
 | 14/09/2026 04:03 | 95.0% | 100.0% | 0 |
 | 14/09/2026 04:21 | 100.0% | 100.0% | 0 |
+| 14/09/2026 05:00 | 95.0% | 100.0% | 0 |
 
 ## 3. Synthèse
 
-- Exécutions de suivi : **6**
-- Taux moyen : **97.5%**
+- Exécutions de suivi : **7**
+- Taux moyen : **97.1%**
 - Taux minimal : **95.0%**
 - Franchissements du seuil : **0**
 
