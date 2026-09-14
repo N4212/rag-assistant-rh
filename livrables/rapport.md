@@ -108,11 +108,16 @@ ci-dessous ; les trois suivants font l'objet d'un développement, soit qu'ils
 conditionnent la faisabilité de l'évaluation, soit qu'ils aient posé une
 difficulté particulière.
 
-| Choix | Alternatives écartées | Raison |
+| Choix | Alternative écartée | Raison |
 |---|---|---|
-| Modèle d'embedding `paraphrase-multilingual-MiniLM-L12-v2` | Modèles anglophones type `all-MiniLM-L6-v2` | Corpus et questions en français ; exécution locale, sans quota ni sortie de données à l'indexation |
-| Base vectorielle Chroma | Qdrant, Weaviate, Milvus | 69 fragments seulement : aucun gain d'une infrastructure serveur ; Chroma s'intègre en bibliothèque et persiste localement |
-| Taille de fragment 500, chevauchement 100, `top_k` 5 | Autres valeurs testées | Issus du plan d'expérience de la section 5, non d'un choix a priori |
+| Modèle d'embedding multilingue | Modèle anglophone | Corpus et questions en français ; exécution locale, sans quota ni sortie de données à l'indexation |
+| Chroma | Qdrant, Weaviate, Milvus | 69 fragments seulement : aucun gain d'une infrastructure serveur ; Chroma s'intègre en bibliothèque |
+| Fragments de 500, `top_k` 5 | Autres valeurs testées | Issus du plan d'expérience de la section 5, non d'un choix a priori |
+
+Le modèle retenu est `paraphrase-multilingual-MiniLM-L12-v2`, entraîné sur
+plusieurs langues dont le français. Les modèles les plus répandus de cette
+famille, comme `all-MiniLM-L6-v2`, sont entraînés exclusivement sur de l'anglais
+et dégradent fortement la recherche sur un corpus français.
 
 Deux propriétés de Chroma ont pesé au-delà du stockage : il conserve le texte
 original aux côtés du vecteur — le vecteur sert à retrouver, le texte est
