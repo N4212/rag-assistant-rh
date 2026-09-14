@@ -486,10 +486,12 @@ simplicité, devrait de même être remplacée par un canal interne.
   récurrent.
 - **Granularité du rappel.** La métrique vérifie qu'un fragment issu du bon
   document a été remonté, sans garantir qu'il s'agisse du bon fragment.
-- **Alerte non éprouvée de bout en bout.** Le webhook, la condition de seuil et
-  la notification ont été validés par envoi manuel, mais le franchissement du
-  seuil n'a jamais été provoqué depuis le flux complet, la qualité mesurée étant
-  restée au-dessus de 90 % à chaque exécution.
+- **Alerte déclenchée artificiellement.** La chaîne complète a été validée de
+  bout en bout — détection du franchissement par le flux, appel du webhook,
+  évaluation de la condition par n8n, notification transmise. Ce déclenchement a
+  toutefois été provoqué en relevant temporairement le seuil au-dessus de tout
+  résultat atteignable : la qualité mesurée étant restée à 95 % ou plus à chaque
+  exécution, aucune dégradation réelle n'a jamais franchi le seuil de 90 %.
 - **Effet secondaire du préfixe de contexte.** Le nom du document préfixant
   chaque fragment entre dans le calcul de l'embedding : une question comportant
   le mot « congé » se rapproche mécaniquement de tous les fragments du document
